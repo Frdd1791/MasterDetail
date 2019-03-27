@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MasterDetail.Views.EgresosPage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <StackLayout
+            BackgroundColor="Silver"
+            Spacing="20"
+            Padding="20">
+            <Label Text="Valor:" FontSize="Medium" TextColor="White" />
+            <Entry Text="{Binding Item.Valor}" FontSize="Medium" Placeholder="Ingrese el valor" TextColor="White"/>
+            <Label Text="Detalle:" FontSize="Medium" TextColor="White"/>
+            <Entry Text="{Binding Item.Detalle}" FontSize="Medium" Placeholder="Ingrese el detalle" TextColor="White"/>
+            <DatePicker MinimumDate="01/01/2019"
+                        MaximumDate="12/31/2019"
+                        Date="03/25/2019"
+                        FontSize="Medium"
+                        Format="D"
+                        TextColor="White"
+                        HorizontalOptions="Start"/>
+            <Button
+                BackgroundColor="SteelBlue"
+                BorderRadius="20"
+                Text="Guardar"
+                HorizontalOptions="CenterAndExpand"
+                TextColor="White"
+                FontSize="Large"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

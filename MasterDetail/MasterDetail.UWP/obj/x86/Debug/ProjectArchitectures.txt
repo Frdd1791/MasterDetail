@@ -1,0 +1,1 @@
+C:\WorkProject\BalanceApp\MasterDetail\MasterDetail\MasterDetail.UWP\MasterDetail.UWP.csproj;x86
